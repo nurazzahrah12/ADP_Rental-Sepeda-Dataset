@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load Data
-day_df = pd.read_csv("day_df_clean.csv")
-hour_df = pd.read_csv("hour_df_clean.csv")
+day_df = pd.read_csv("Dashboard/day_df_clean.csv")
+hour_df = pd.read_csv("Dashboard/hour_df_clean.csv")
 
 # Konversi kolom tanggal ke datetime
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
