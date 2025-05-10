@@ -36,12 +36,10 @@ Dalam proyek ini, dilakukan beberapa analisis utama untuk memahami pola pengguna
 ### **2. Analisis Pola Mingguan**  
    - **Pertanyaan**: Apakah jumlah pengguna lebih banyak di hari kerja dibandingkan akhir pekan?  
    - **Metode**: Menggunakan visualisasi perbandingan jumlah penyewaan sepeda antara weekday vs weekend dalam bentuk **box plot**  
-   - **Hasil**: [Diisi dengan insight dari data]  
 
 ### **3. Analisis Pengaruh Suhu terhadap Peminjaman Sepeda**  
    - **Pertanyaan**: Bagaimana pengaruh suhu terhadap jumlah peminjaman sepeda?  
-   - **Metode**: Menggunakan **scatter plot** untuk melihat hubungan antara suhu dan jumlah penyewaan sepeda  
-   - **Hasil**: [Diisi dengan insight dari data]  
+   - **Metode**: Menggunakan **scatter plot** untuk melihat hubungan antara suhu dan jumlah penyewaan sepeda
 
 ### **4. Visualisasi Data Interaktif**  
    - Data disajikan dalam bentuk grafik dan dashboard interaktif menggunakan **Matplotlib**, **Seaborn**, dan **Streamlit**  
