@@ -1,52 +1,77 @@
-# Proyek Analisis Data: **Bike Sharing Dataset**  
-Proyek ini bertujuan untuk menganalisis data penyewaan sepeda menggunakan dataset **Bike Sharing**. Analisis ini akan mengeksplorasi faktor-faktor yang memengaruhi jumlah peminjaman sepeda serta menyajikan hasilnya dalam bentuk dashboard interaktif menggunakan **Streamlit**.  
+# Proyek Analisis Data: Bike Sharing Dataset
 
-## **Dataset yang Digunakan**  
-Dataset yang digunakan dalam proyek ini berisi informasi mengenai jumlah peminjaman sepeda berdasarkan faktor-faktor seperti hari, jam, suhu, kelembaban, dan kondisi cuaca. Dataset yang digunakan meliputi:  
+---
 
-1. **day.csv**  
-   - Berisi data agregasi harian terkait jumlah penyewaan sepeda  
-   - Kolom utama: `dteday` (tanggal), `weekday` (hari dalam seminggu), `temp` (suhu), `hum` (kelembaban), `cnt` (total penyewaan)  
+## Deskripsi Proyek
 
-2. **hour.csv**  
-   - Berisi data penyewaan sepeda per jam  
-   - Kolom utama: `dteday` (tanggal), `hr` (jam), `temp` (suhu), `hum` (kelembaban), `cnt` (total penyewaan)  
+Proyek ini bertujuan untuk menganalisis data penyewaan sepeda menggunakan dataset **Bike Sharing**. Fokus analisis meliputi pengaruh faktor-faktor seperti hari, jam, suhu, kelembaban, dan cuaca terhadap jumlah penyewaan sepeda. Hasil analisis disajikan dalam bentuk **dashboard interaktif** menggunakan **Streamlit**.
 
-## **Cara Menjalankan Dashboard**  
-Untuk menjalankan dashboard interaktif yang dibuat menggunakan **Streamlit**, ikuti langkah-langkah berikut:  
+---
 
-1. **Buka terminal atau command prompt**  
-2. **Navigasikan ke folder proyek**  
+## Dataset yang Digunakan
+
+1. **day.csv**
+   - Data agregat harian penyewaan sepeda
+   - Kolom penting: `dteday`, `weekday`, `temp`, `hum`, `cnt`
+
+2. **hour.csv**
+   - Data penyewaan per jam
+   - Kolom penting: `dteday`, `hr`, `temp`, `hum`, `cnt`
+
+---
+
+## Cara Menjalankan Dashboard
+
+1. Buka terminal atau command prompt
+2. Arahkan ke folder proyek:
    ```bash
    cd submission/dashboard
    ```
-3. **Jalankan aplikasi Streamlit**  
+3. Jalankan aplikasi Streamlit:
    ```bash
    streamlit run dashboard.py
    ```
-4. **Dashboard akan terbuka secara otomatis di browser**  
+4. Akses dashboard di browser lokal Anda
 
-## **Hasil Analisis & Temuan Utama**  
-Dalam proyek ini, dilakukan beberapa analisis utama untuk memahami pola penggunaan sepeda berdasarkan dataset yang tersedia. Analisis yang dilakukan meliputi:  
+💡 *Dashboard juga dideploy ke Streamlit Cloud dan tautannya disimpan di file `url.txt`.*
 
-### **1. Eksplorasi Data & Pembersihan Data**  
-   - Memeriksa dataset untuk melihat missing values dan inkonsistensi  
-   - Melakukan transformasi data agar lebih siap untuk dianalisis  
+---
 
-### **2. Analisis Pola Mingguan**  
-   - **Pertanyaan**: Apakah jumlah pengguna lebih banyak di hari kerja dibandingkan akhir pekan?  
-   - **Metode**: Menggunakan visualisasi perbandingan jumlah penyewaan sepeda antara weekday vs weekend dalam bentuk **box plot**  
+## Hasil Analisis
 
-### **3. Analisis Pengaruh Suhu terhadap Peminjaman Sepeda**  
-   - **Pertanyaan**: Bagaimana pengaruh suhu terhadap jumlah peminjaman sepeda?  
-   - **Metode**: Menggunakan **scatter plot** untuk melihat hubungan antara suhu dan jumlah penyewaan sepeda
+### 1. Eksplorasi & Pembersihan Data
+- Memeriksa missing values dan konsistensi data
+- Transformasi kolom waktu dan cuaca
 
-### **4. Visualisasi Data Interaktif**  
-   - Data disajikan dalam bentuk grafik dan dashboard interaktif menggunakan **Matplotlib**, **Seaborn**, dan **Streamlit**  
-   - Dashboard memungkinkan pengguna untuk mengeksplorasi tren penggunaan sepeda berdasarkan berbagai faktor  
+### 2. Analisis Pola Mingguan
+- Apakah jumlah penyewaan lebih tinggi di hari kerja?
+- Visualisasi: **Box plot** weekday vs weekend
 
-## **Kesimpulan & Manfaat Analisis**  
-Proyek ini memberikan wawasan tentang faktor-faktor yang memengaruhi penggunaan sepeda, termasuk pola mingguan dan pengaruh suhu. Wawasan ini dapat membantu pengelola sistem penyewaan sepeda dalam:  
-✅ Mengoptimalkan jumlah sepeda yang tersedia pada hari dan jam tertentu  
-✅ Mengantisipasi permintaan sepeda berdasarkan perubahan cuaca  
-✅ Meningkatkan pengalaman pengguna dengan memahami pola peminjaman sepeda  
+### 3. Analisis Pengaruh Suhu
+- Hubungan antara suhu dan jumlah peminjaman
+- Visualisasi: **Scatter plot**
+
+### 4. Visualisasi Interaktif
+- Dibuat dengan Matplotlib, Seaborn, dan Streamlit
+- Pengguna dapat eksplorasi tren data secara mandiri
+
+---
+
+## Umpan Balik Reviewer (Intisari)
+
+**Catatan penting:**
+- Dokumentasi markdown di notebook sangat baik.
+- Dashboard berhasil dideploy dan mudah dipahami.
+
+**Saran pengembangan:**
+- Coba tambahkan analisis lanjutan seperti:
+  - **RFM Analysis** (Recency, Frequency, Monetary)
+  - **Geoanalysis** menggunakan `folium` atau `matplotlib`
+  - **Clustering manual** (grouping/binned analysis)
+- Analisis lanjutan bisa memperkaya wawasan tanpa harus pakai machine learning.
+
+---
+
+## Kesimpulan
+
+Analisis ini memberikan wawasan tentang tren penyewaan sepeda berdasarkan waktu dan cuaca. Dashboard interaktif memungkinkan pengguna untuk mengeksplorasi data dengan fleksibel. Proyek ini merupakan landasan kuat untuk masuk ke proyek machine learning di tahap berikutnya.
