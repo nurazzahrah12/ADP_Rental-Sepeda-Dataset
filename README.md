@@ -57,7 +57,7 @@ Proyek ini bertujuan untuk menganalisis data penyewaan sepeda menggunakan datase
 
 ---
 
-## Umpan Balik Reviewer (Intisari)
+## Umpan Balik Reviewer
 
 **Catatan penting:**
 - Dokumentasi markdown di notebook sangat baik.
