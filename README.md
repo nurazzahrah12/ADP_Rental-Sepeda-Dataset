@@ -33,7 +33,7 @@ Proyek ini bertujuan untuk menganalisis data penyewaan sepeda menggunakan datase
    ```
 4. Akses dashboard di browser lokal Anda
 
-💡 *Dashboard juga dideploy ke Streamlit Cloud dan tautannya disimpan di file `url.txt`.*
+*Dashboard juga dideploy ke Streamlit Cloud dan tautannya disimpan di file `url.txt`.*
 
 ---
 
